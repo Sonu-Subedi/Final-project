@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Plants vs Zombies</title>
+    <link rel="stylesheet" href="./css/styles.css" />
+  </head>
+  <body>
+    <div class="wrapper">
+      <canvas id="canvas"> </canvas>
+    </div>
+    <div class="start-menu" id="startmenu">
+      <a href="#" class="start-menu__btn hide">
+        <button class="button" id="startButton">
+          <img
+            src="../images/interface/Button.png"
+            alt="button"
+            class="start-menu__img"
+          />
+          <div class="start-menu__text">Start</div>
+        </button>
+      </a>
+    </div>
+    <audio id="walkingAudio" src="./audio/zombies_entering.mp3"></audio>
+
+    <div id="gameOverContainer" class="hide">
+      <img
+        src="../images/gameover.png"
+        alt="Game Over Image"
+        id="gameOverImage"
+      />
+      <div id="gameOverText" class="game-over-text">Game Over</div>
+      <button id="restartButton">Restart Game</button>
+      <div id="highestScore">Highest Score: 0</div>
+    </div>
+
+    <script src="./js/sun.js"></script>
+    <script src="./js/projectiles.js"></script>
+    <script src="./js/lawncleaner.js"></script>
+
+    <script src="./js/enemies.js"></script>
+    <script src="./js/defenders.js"></script>
+    <script src="./js/script.js"></script>
+  </body>
+</html>
