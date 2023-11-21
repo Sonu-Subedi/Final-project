@@ -50,7 +50,7 @@ class LawnCleaner {
 
 // Create LawnCleaner instances for each row
 const lawnCleaners = [];
-const rowPositions = [280, 430, 600];
+const rowPositions = [290, 440, 610];
 
 for (const y of rowPositions) {
   const newLawnCleaner = new LawnCleaner(y);

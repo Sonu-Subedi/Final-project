@@ -15,7 +15,7 @@ const cellSize = 150;
 const cellGap = 0;
 const allowedRowPositions = [280, 430, 600];
 
-let numberOfResources = 10000;
+let numberOfResources = 300;
 let enemiesInterval = 600;
 let frame = 0;
 let gameOver = false;
@@ -103,30 +103,6 @@ canvas.addEventListener("mouseleave", function () {
   mouse.x = undefined;
   mouse.y = undefined;
 });
-// Game board
-const controlsBar = {
-  width: canvas.width,
-  height: cellSize,
-};
-
-class Cell {
-  constructor(x, y) {
-    this.x = x;
-    this.y = y;
-    this.width = cellSize;
-    this.height = cellSize;
-  }
-}
-
-function createGrid() {
-  for (let y = 215; y < 595; y += cellSize) {
-    for (let x = 220; x < canvas.width; x += cellSize) {
-      gameGrid.push(new Cell(x, y));
-    }
-  }
-}
-
-createGrid();
 
 //floating message
 let floatingMessagesArray = [];
